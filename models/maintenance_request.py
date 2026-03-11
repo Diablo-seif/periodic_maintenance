@@ -82,7 +82,7 @@ class MaintenanceRequest(models.Model):
     # Def to check if system need to make  Maintenance Request Preventive
 
 
-    # @api.model
+    @api.model
     def maintenance_request_plans(self):
         today = fields.Date.today()
         # in case (if maintenance done is True)
