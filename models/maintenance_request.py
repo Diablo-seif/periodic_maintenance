@@ -236,7 +236,7 @@ class MaintenanceRequestLines(models.Model):
             line.difference = line.qty_available - line.quantity if line.quantity and line.qty_available else 0.0
 
     @api.constrains('quantity', 'qty_available')
-    def _check_quantity(self):
+    def check_quantity(self):
         for line in self:
 
             if line.qty_available == 0:
