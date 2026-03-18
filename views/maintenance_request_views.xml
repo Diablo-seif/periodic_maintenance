@@ -17,7 +17,7 @@
                             string="Get Spare Part"
                             type="object"
                             class="oe_highlight"
-                            invisible="not done or orders_spare_parts == True"
+                            invisible="0"
                     />
 
                     <button name="maintenance_request_plans"
@@ -51,7 +51,7 @@
 
                 <xpath expr="//notebook" position="inside">
 
-                    <page string="Maintenance Plan">
+                    <page string="Equipment">
                         <group>
 
                             <group>
